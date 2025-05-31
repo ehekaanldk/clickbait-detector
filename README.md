@@ -1,7 +1,7 @@
 
 # 🎣 Clickbait Detector - 낚시성 기사 판별 서비스
 
----
+
 
 ## 📘 소개
 
@@ -9,7 +9,7 @@ Clickbait Detector는 온라인 뉴스 기사의 제목과 본문을 분석하�
 낚시성 기사일 경우 **이유를 생성**, 비낚시성 기사일 경우에는 **요약을 제공**하는 인공지능 기반 서비스입니다.  
 뉴스 콘텐츠의 신뢰도를 높이고 사용자에게 명확한 정보를 전달하는 것을 목표로 합니다.
 
----
+
 
 ## 🎯 목표
 
@@ -17,7 +17,6 @@ Clickbait Detector는 온라인 뉴스 기사의 제목과 본문을 분석하�
 -  **낚시성 이유 생성**: RAG(Retrieval-Augmented Generation)를 활용해 외부 정보 기반의 설명을 생성합니다.  
 -  **비낚시성 기사 요약**: 요약 모델을 통해 중요한 정보만 간결하게 전달합니다.
 
----
 
 ## 📌 주요 기능
 
@@ -27,7 +26,7 @@ Clickbait Detector는 온라인 뉴스 기사의 제목과 본문을 분석하�
 - 비낚시성 판단 시 핵심 내용 요약  
 - RESTful API 제공 (향후 웹 UI 연동 예정)
 
----
+
 
 ## ⚙️ 기술 스택
 
@@ -37,7 +36,7 @@ Clickbait Detector는 온라인 뉴스 기사의 제목과 본문을 분석하�
 | AI/ML | Hugging Face Transformers (BERT, LLaMA), PyTorch |
 | Data | AIHub Clickbait Detection Dataset (JSON) |
 
----
+
 
 ## 🧾 데이터셋 예시 (JSON)
 
@@ -52,7 +51,6 @@ Clickbait Detector는 온라인 뉴스 기사의 제목과 본문을 분석하�
 - `newsTitle` + `newsContent`를 하나의 입력으로 구성하여 분류 모델에 전달  
 - `clickbaitClass`: 1 → 낚시성, 0 → 일반 기사
 
----
 
 ## 🔬 학습 및 추론 방식 (BERT vs LLaMA)
 
@@ -68,7 +66,6 @@ Clickbait Detector는 온라인 뉴스 기사의 제목과 본문을 분석하�
 - 다음 토큰으로 `"Clickbait"` 또는 `"Not Clickbait"`를 생성  
 - 생성된 텍스트를 파싱하여 결과 판단
 
----
 
 ## 📊 모델 성능 비교
 
@@ -81,7 +78,7 @@ Clickbait Detector는 온라인 뉴스 기사의 제목과 본문을 분석하�
 특히 **Precision 81.75%**는 낚시성 기사 판별에서 **높은 신뢰도**를 의미합니다.  
 또한 F1 Score 역시 **LLaMA가 79.31%로 BERT를 초과**했습니다.
 
----
+
 
 ## ❓ 왜 LLaMA를 선택했는가?
 

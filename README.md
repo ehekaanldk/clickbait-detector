@@ -1,5 +1,3 @@
-낚시성 기사 판별 서비스
-
 # 🎣 Clickbait Detector - 낚시성 기사 판별 서비스
 
 
